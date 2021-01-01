@@ -31,8 +31,17 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.blueGrey,
         child: SafeArea(
           child: Center(
-            child: GestureDetector(
-              onTap: () {},
+            child: Expanded(
+              child: Container(
+                color: Colors.white,
+                height: 100,
+                width: 100,
+                child: GestureDetector(
+                  onTap: () {
+                    print('This actually works');
+                  },
+                ),
+              ),
             ),
           ),
         ),
