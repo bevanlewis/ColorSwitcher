@@ -20,7 +20,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         backgroundColor: color,
         body: SafeArea(
           child: Center(
-            // Todo: Refactor code
             child: FlatButton(
               onPressed: () {
                 baseColor = Random().nextInt(ColorList.length);
